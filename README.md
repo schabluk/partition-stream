@@ -11,7 +11,7 @@ Partition stream into multpile streams.
 Code:
 
 ```javascript
-partition = require("partition-stream")
+var partition = require("partition-stream")
 var _ = require('highland')
 
 /*
