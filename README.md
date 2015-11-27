@@ -1,6 +1,6 @@
 # partition-stream
 
-Partition stream: splits events by matching object stream properties with a set of ranges.
+Partition stream into multpile streams by matching object stream properties with a set of ranges.
 
 ## installation
 
