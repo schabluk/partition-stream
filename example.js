@@ -42,7 +42,7 @@ var outOfRange = _().each(function(doc) { console.log(doc.id, doc.type, 'is not 
 /*
   The last 'outOfRange' stream is special. It will receive all the objects,
   that do not match to any of the ranges that we have defined.
-  But first, put all receivers together in an array of streams.
+  But first, put all receivers together into an array of streams.
  */
 
 var outputStreams = [
