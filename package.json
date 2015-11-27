@@ -1,7 +1,7 @@
 {
   "name": "partition-stream",
   "version": "0.0.1",
-  "description": "Partition stream into multpile streams by matching object stream properties with a set of ranges",
+  "description": "Partition stream into multpile streams",
   "main": "index.js",
   "scripts": {
   },
@@ -11,8 +11,9 @@
   },
   "keywords": [
     "conditional",
-    "if",
+    "dispatch",
     "parition",
+    "ranges",
     "stream"
   ],
   "author": "Rob Richardson (http://robrich.org/)",
@@ -28,6 +29,7 @@
     "duplexer2": "^0.1.4",
     "multi-fork": "^0.0.2",
     "merge-stream": "^1.0.0",
-    "through2": "^2.0.0"
+    "through2": "^2.0.0",
+    "underscore": "^1.8.3"
   }
 }

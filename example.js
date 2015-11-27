@@ -1,17 +1,6 @@
-# partition-stream
+#!/usr/bin/env node
 
-Partition stream into multpile streams.
-
-## installation
-
-```npm install partition-stream```
-
-## example
-
-Code:
-
-```javascript
-partition = require("partition-stream")
+var partition = require("./")
 var _ = require('highland')
 
 /*
@@ -65,20 +54,3 @@ var outputStreams = [
 ]
 
 _(docs).pipe(partition(key, ranges, outputStreams))
-```
-
-Output:
-
-```
-$ node example.js
-0 'apple' 'sent to John'
-1 'apple' 'sent to John'
-2 'banana' 'sent to Anna'
-3 'coco' 'sent to Bill'
-4 'coco' 'sent to Bill'
-5 'potato' 'is not a fruit'
-6 'tomato' 'is not a fruit'
-```
-## license
-
-MIT. A copy is included with the source.
