@@ -1,6 +1,6 @@
 'use strict'
 
-var duplexer = require('duplexer2')
+var duplexify = require('duplexify')
 var through = require('through2')
 var mergeStream = require('merge-stream')
 var MultiFork = require('multi-fork')
@@ -50,7 +50,7 @@ function Partition(key, ranges, outputs) {
   // redirect mergedStream errors to sideStream
   mergedStream.on('error', function(err) { sideStream.emit('error', err) })
 
-  return duplexer({ objectMode: true }, multiStream, sideStream)
+  return duplexify.obj(multiStream, sideStream);
 }
 
 module.exports = Partition
